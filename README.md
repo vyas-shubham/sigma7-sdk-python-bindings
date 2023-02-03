@@ -8,7 +8,7 @@ The bindings for only the `Standard SDK` from the Haptics SDK are provided here.
 
 The following are required to build the bindings:
 
-- Force Dimension SDK: Can be downloaded from their website: <https://www.forcedimension.com/software/sdk>
+- Force Dimension SDK: Can be downloaded from their website: <https://www.forcedimension.com/software/sdk>. For ease of use, extract the SDk to the `sigmaSDK` folder in the root of this repo.
 - pybind11: Can be installed using `pip install pybind11`
 - Build tools such as `cmake` and `make`, and a C++ compiler.
 
