@@ -54,3 +54,7 @@ The bindings will be compiled to the `build/` folder by default. Two example scr
 
 - `hello_world.py`
 - `single_device.py`
+
+## Known Issues/Bugs
+
+As I've not yet been able to properly pass the `char` function arguments in the binding, the `DeviceID` argument must be a non-negative integer between `0` and `9`. This is in contrast to the C++ examples in the SDK/header files where the `DeviceID` is a `char` and the default value is `-1`. Pybind11 sees `-1` and double digit integers as a multi-character string instead of a character.
